@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stress Test</title>
+<script>
+function runStressTest() {
+    // JavaScript를 사용하여 Python 스크립트를 호출
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://localhost:5002/run-stress-test", true);
+    xhr.send();
+}
+</script>
+</head>
+<body>
+
+<div style="text-align: center; margin-top: 50px;">
+    <button onclick="runStressTest()">Stress Test</button>
+</div>
+
+</body>
+</html>
