@@ -204,6 +204,7 @@ def get_sddc_id():
 @app.route('/run-stress-test')
 def run_stress_test():
     # Bash 쉘에서 "stress -c 2" 명령어 실행
+    print("stress test started!")
     subprocess.run(["stress", "-c", "2"])
     return 'Stress test started!'
 
